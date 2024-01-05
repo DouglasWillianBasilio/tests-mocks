@@ -13,6 +13,7 @@ data class Usuario(
     val email: String,
     val senha: String
 ) {
+    @Ignore
     fun ehValido() = emailValido && senhaValida
 
     @Ignore
